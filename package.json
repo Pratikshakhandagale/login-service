@@ -1,25 +1,30 @@
 {
-  "name": "myNpm",
+  "name": "pratiksha14",
   "version": "0.0.1",
   "description": "This is my first test npm package",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "ngc": "ngc",
     "build": "rm -rf dist && npm run ngc",
     "publishPackage": "npm run build && npm publish"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pratikshakhandagale/myNpm"
+    "url": "git+https://github.com/Pratikshakhandagale/myNpm.git"
   },
   "keywords": [],
   "author": "Simon Grimm",
   "license": "MIT",
   "homepage": "https://ionicacademy.com",
   "devDependencies": {
- "@angular/animations": "5.2.11",
+    "@angular/animations": "5.2.11",
     "@angular/common": "5.2.11",
     "@angular/compiler": "5.2.11",
     "@angular/compiler-cli": "5.2.11",
@@ -30,8 +35,11 @@
     "@angular/platform-browser-dynamic": "5.2.11",
     "@types/node": "^9.4.6",
     "ionic-angular": "3.9.2",
-	"rxjs": "5.5.11",
+    "rxjs": "5.5.11",
     "typescript": "2.4.2",
     "zone.js": "0.8.18"
+  },
+  "bugs": {
+    "url": "https://github.com/Pratikshakhandagale/myNpm/issues"
   }
 }
