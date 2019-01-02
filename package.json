@@ -2,7 +2,7 @@
   "name": "pratiksha14",
   "version": "0.0.1",
   "description": "This is my first test npm package",
-  "main": "./dist/index.js",
+  "main": "index.ts",
   "typings": "./dist/index.d.ts",
   "files": [
     "dist"
