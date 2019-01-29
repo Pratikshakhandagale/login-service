@@ -1,22 +1,40 @@
 {
   "compilerOptions": {
-    "module": "es2015",
     "target": "es5",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "inlineSources": true,
+    "module": "es2015",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    /* Specify library files to be included in the compilation:  */
     "declaration": true,
-    "noImplicitAny": false,
-    "experimentalDecorators": true,
-    "lib": ["dom", "es2015"],
-    "outDir": "dist"
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src/app",
+    "skipLibCheck": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true, 
+    "strictNullChecks": true,
+    "stripInternal": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node", 
+    "baseUrl": "./", 
+    "paths": {
+      "joomla-login": [
+        "node_modules/joomla-login/*"
+      ]
+    },
+    /* Source Map Options */
+    "inlineSources": true,
+    /* Experimental Options */
+    "experimentalDecorators": true 
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "scripts"
+  "files": [
+    "./src/app/index.ts"
   ],
   "angularCompilerOptions": {
-    "skipTemplateCodegen": true
+    "strictMetadataEmit": true,
+    "genDir": "aot-dist"
   }
 }

@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'joomla-login@0.0.52' ]
+2 info using npm@4.1.2
+3 info using node@v8.4.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 verbose stack Error: write EIO
+7 verbose stack     at _errnoException (util.js:1041:11)
+7 verbose stack     at WriteWrap.afterWrite [as oncomplete] (net.js:858:14)
+8 verbose cwd /home/ttpl49/Documents/htdoc/npm/joomla-login
+9 error Linux 4.4.0-128-generic
+10 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "install" "--save" "joomla-login@0.0.52"
+11 error node v8.4.0
+12 error npm  v4.1.2
+13 error code EIO
+14 error errno EIO
+15 error syscall write
+16 error write EIO
+17 error If you need help, you may report this error at:
+17 error     <https://github.com/npm/npm/issues>
+18 verbose exit [ 1, true ]
